@@ -1,0 +1,22 @@
+<%- include("partials/header"); -%>
+
+  <div class="container newContainer">
+  <h3><%=isPresent%>Match Found</h3>
+    <form action="/delete" method="post">
+      <div class="form-group">
+      <% if(question) { %>
+        <h4><%=question%></h4>
+        <ul>
+          <li><%=optionA%></li>
+          <li><%=optionB%></li>
+          <li><%=optionC%></li>
+          <li><%=optionD%></li>
+        </ul>
+      <% } %>
+      </div>
+      <button class="btn btn-<%=danger%>" type="submit" name="button"><%=Remove%></button>
+    </form>
+  </div>
+  </body>
+
+  <%- include("partials/footer"); -%>

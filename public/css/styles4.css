@@ -1,0 +1,138 @@
+.newContainer{
+	margin-top: 10px;
+}
+.newContainer h3{
+	margin-bottom: 15px;
+}
+.container{
+	margin-top: 10px;
+}
+.container h1{
+	margin-bottom: 15px;
+}
+.editbtn{
+	display:table;
+	margin: 0 auto;
+}
+.footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   margin-top:25px;
+   padding-top: 15px;
+   padding-bottom: 25px;
+   height: 68px;
+   background-color: #f8f9fa;
+   text-align: center;
+   box-shadow: 0px 0px 2px 0px grey;
+}
+.submit-button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#page-wrap{
+	width:77%;
+	margin:0 auto
+}
+#myDiv{
+	font-size: 200%;
+	margin-left: 10px;
+}
+.newh1{
+	margin:25px 0;
+	font:22px Georgia,Serif;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color: #e65c00
+	}
+#quiz input{
+	vertical-align:middle
+}
+#quiz ol{
+	margin:0 0 10px 20px
+}
+#quiz ol li{
+	margin:0 0 20px
+}
+#quiz ol li div{
+	padding:4px 0
+}
+#quiz h3{
+	font-size:17px;
+	margin:0 0 1px;
+	color:#666
+}
+#results{
+	font:44px Georgia,Serif
+}
+ol {
+	padding:0px;
+}
+.nabvar-nav h5 {
+	color: grey;
+}
+.navbar-brand{
+	margin-left: 10%;
+}
+.navbar {
+    padding-top: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    box-shadow: 0px 0px 10px 0px grey;
+}
+.nav-link{
+	font-size: 150%; 
+	color: grey; 
+	letter-spacing: 2px;
+}
+.dropdown-item{ 
+	color: grey; 
+	letter-spacing: 2px;
+}
+.dropdown-menu{
+	left:-4vw;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+#nav-list a {
+  text-align: center;
+}
+img {
+	border-radius: 50%; 
+	border: 1px solid #e6e6e6;
+}
+h3 {
+	color: #1abc9c !important;
+}
+@media(min-width: 992px){
+	.navbar-nav{
+		 position: absolute;
+ 		 right: 0;
+	}
+}
+
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 5px;
+    font-size: 5vw;
+  }
+}
+
+@media(max-width: 390px){
+	button {
+		width:100%;
+	}
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+	.nav-link {
+		font-size: 1.5vw;
+	}
+}

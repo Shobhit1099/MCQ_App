@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Quiz</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Custom Stylesheet-->
+  <link rel="stylesheet" href="/css/styles2.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles4.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-light navbar-expand-lg navbar-light" id="header-nav">
+      <a href="/home" class="navbar-brand row">
+        <img class="d-none d-sm-block" src="/images/CN.jpg" width="75" height="75" class="d-inline-block align-top" alt="Coding Ninjas Pic">
+        <span id="myDiv">Quiz NiNjA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul id="nav-list" class="navbar-nav" style="">
+          <li class="nav-item active"  style="">
+            <a class="nav-link" href="/home">Home<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Options
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/newQuestion">Add New Question</a>
+              <a class="dropdown-item" href="/searchAndDelete">Delete a Question</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/about" style="padding-bottom: 0px">About</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/logout">Log Out</a>
+          </li>
+        </ul>
+     </div>
+    </nav>
+  </header>
+  <div class="container">
+  <h1>Add Your Question</h1>
+    <form class="" action="/newQuestion" method="post">
+      <div class="form-group">
+        <label>Enter a Unique Question ID</label>
+        <input class="form-control" type="text" name="uniqueID" placeholder="For Example: c69f" autocomplete="off" required>
+        <hr>
+        <label>Question</label>
+        <textarea class="form-control" name="postQuestion" rows="3" cols="30" required></textarea>
+        <br>
+        <label>Option A</label>
+        <textarea class="form-control" name="postChoiceA" rows="3" cols="30" required></textarea>
+        <label>Option B</label>
+        <textarea class="form-control" name="postChoiceB" rows="3" cols="30" required></textarea>
+        <label>Option C</label>
+        <textarea class="form-control" name="postChoiceC" rows="3" cols="30" required></textarea>
+        <label>Option D</label>
+        <textarea class="form-control" name="postChoiceD" rows="3" cols="30" required></textarea>
+        <br>
+        <label>Correct Answer Choice</label>
+        <div>
+          <input type="radio" name="postAnswer" id="answer-A" value="A" />
+          <label for="answer-A">A</label>
+        </div>
+        <div>
+          <input type="radio" name="postAnswer" id="answer-B" value="B" />
+          <label for="answer-B">B</label>
+        </div>
+        <div>
+          <input type="radio" name="postAnswer" id="answer-C" value="C" />
+          <label for="answer-C">C</label>
+        </div>
+        <div>
+          <input type="radio" name="postAnswer" id="answer-D" value="D" />
+          <label for="answer-D">D</label>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Add</button>
+    </form>
+  </div>
+  </body>
+  
+ <%- include("partials/footer"); -%>

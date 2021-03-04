@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+
+    <div id="page-wrap">
+    <h1 class="newh1" style="text-align: center;font-size: 40px; color: #1abc9c;">Your Score</h1>
+    <h1 style="text-align: center;"></h1>
+    </div>
+    <form action="/result" method="post">
+    <input type="hidden" name="realAns" value="<%=finalScore1%>"/>
+    <button class="btn btn-info" type="submit" name="button" style="display:table;margin:0 auto">Show Score</button>
+    </form> 
+</body>
+
+<%- include("partials/footer"); -%>
